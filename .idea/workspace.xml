@@ -192,4 +192,7 @@
     <MESSAGE value="上传大创申报草稿，项目介绍书。" />
     <option name="LAST_COMMIT_MESSAGE" value="上传大创申报草稿，项目介绍书。" />
   </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/wendao_platform$Struction.coverage" NAME="Struction 覆盖结果" MODIFIED="1729337973411" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+  </component>
 </project>
