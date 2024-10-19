@@ -24,8 +24,8 @@
 
 ### 1. 克隆代码库
 ```sh
-git clone https://github.com/YourUsername/Personalized-Learning-Platform.git
-cd Personalized-Learning-Platform
+git clone https://github.com/Evan-Joseph/wendao-platform.git
+cd wendao-platform
 ```
 
 ### 2. 环境设置
