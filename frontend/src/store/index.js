@@ -1,26 +1,24 @@
-import Vue from 'vue';
-import Vuex from 'vuex';
+import { createStore } from 'vuex';
 
-Vue.use(Vuex);
-
-export default new Vuex.Store({
+export default createStore({
   state: {
-    user: null,
-    isAuthenticated: false
+    isAuthenticated: false,
   },
   mutations: {
-    setUser(state, user) {
-      state.user = user;
-      state.isAuthenticated = !!user;
-    }
+    setAuthenticated(state, value) {
+      state.isAuthenticated = value;
+    },
   },
   actions: {
-    login({ commit }, user) {
-      commit('setUser', user);
+    login({ commit }) {
+      commit('setAuthenticated', true);
     },
     logout({ commit }) {
-      commit('setUser', null);
-    }
+      commit('setAuthenticated', false);
+      localStorage.removeItem('token'); // 删除本地存储中的 token
+    },
   },
-  modules: {}
+  getters: {
+    isAuthenticated: (state) => state.isAuthenticated,
+  },
 });
